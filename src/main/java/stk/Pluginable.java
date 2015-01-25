@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package stk;
 
 import java.awt.MenuItem;
@@ -9,7 +5,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author user
+ * @author Sebastian Gruszka
  */
 public interface Pluginable {
     /**Name that is displayed on list */

@@ -15,15 +15,14 @@ import static stk.timebalance.TimeBalanceEngine.milsToHuman;
  * @author Sebastian Gruszka
  */
 public class BackgroundUpdater implements Runnable {
-
-    TimeBalanceEngine engine;
-    File timeMark;
-    long lastRun = 0;
-    long lastRunPlus = 0;
-    ReportData reportData;
-    String modulePath;
-    File timeStartMark;
-    TBSettingsJPanel settingsPanel;
+    private TimeBalanceEngine engine;
+    private File timeMark;
+    private long lastRun = 0;
+    private long lastRunPlus = 0;
+    private ReportData reportData;
+    private String modulePath;
+    private File timeStartMark;
+    private TBSettingsJPanel settingsPanel;
 
     BackgroundUpdater(TimeBalanceEngine engine) {
         this.engine = engine;

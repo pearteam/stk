@@ -1,14 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package stk;
-
-import java.util.Date;
 
 /**
  *
- * @author user
+ * @author Sebastian Gruszka
  */
 public class Constans {
     /** Branch */
