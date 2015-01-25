@@ -10,9 +10,7 @@ Timebalance plugin
    Plugin is making entries in file located in user folder: .stk\.timebalance\timeent2015.txt that look like this:
 
 2015-01-25 18:36 19:12
-
 2015-01-25 19:18 19:34
-
 2015-01-25 19:53 19:53
    
 It can be modiffied by user to add or remove time gaps.
