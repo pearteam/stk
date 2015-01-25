@@ -16,6 +16,7 @@ Timebalance plugin
 2015-01-25 19:53 19:53
    
 It can be modiffied by user to add or remove time gaps.
+When computer is hibernated or suspended (stand by) working time is not counted.
 
 When user move his mouse pointer on Tray Icon it will be displayed summary about working time. Items are configurable in Settings.
 

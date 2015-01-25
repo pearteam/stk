@@ -18,7 +18,7 @@ public class TimeBalanceEngine implements Pluginable {
     private static TimeBalanceEngine instance;
     private TBSettingsJPanel settingsPanel;
         /**String that will be published in tray icon*/
-        private String publish = "---";
+        private String publish = "--NO-DATA-YET--";
 
 
     public static Pluginable getInstance() {
@@ -38,6 +38,8 @@ public class TimeBalanceEngine implements Pluginable {
         settingsPanel = new TBSettingsJPanel();
         timeBalanceEngineHelper = new TimeBalanceEngineHelper();
         backgroundUpdater = new BackgroundUpdater(this);
+        //run once to update data
+        backgroundUpdater.run();
         ScheduledExecutorService service = Executors.newScheduledThreadPool(1);
         service.scheduleAtFixedRate(backgroundUpdater, 0, 60, TimeUnit.SECONDS);
     }
@@ -73,6 +75,7 @@ public class TimeBalanceEngine implements Pluginable {
 
     public void publish(String publishText) {
         if (toolTipObj != null) {
+            publish = publishText;
             toolTipObj.setToolTip("timebalance", publishText, 0);
         }
     }
