@@ -139,10 +139,9 @@ public class Main implements Tooltipable {
     }
 
     /**
-     * nazwa modułu, gdy jest już taki to aktualizuje jego wpis, gdy nie ma 
-     * to normalnie dodaje, pos służy do ustalania która pozycja to ma być, 
-     * czli 0, 1, 2 itp, 
-     * na końcu tworzy zbiorczego stringa i go zapisuje do tooltiplist.settooltip(str);
+     * Module name, if not exists it is adding it, otherwise is updating,
+     * 'pos' suppose to be used to choose position on list: 0, 1, 2, ect.
+     * at the end it aggregates strings and put it to tooltiplist.settooltip(str)
      * 
      * @param name
      * @param txt if null entry will be removed

@@ -39,7 +39,7 @@ public class AnalysisReportFileTest {
     @Test
     public void emptyReportFileTest() {
         //given
-        File rapFile =  new File(System.getProperty("user.home") + stk.Constans.BRANCH + "/empty.txt");
+        File rapFile =  new File(System.getProperty("user.home") + "/.tmp-empty.txt");
         //when
         try {
             rapFile.createNewFile();
